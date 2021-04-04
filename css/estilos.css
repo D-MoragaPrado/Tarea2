@@ -1,0 +1,18 @@
+li{
+    list-style: none;
+}
+label{
+    width: 120px;
+    margin: 10px 10px 10px 0px;
+    text-align: left;
+    display: inline-block;
+}
+
+div#caja{
+    margin-left: 50px;
+}
+
+.button{
+    margin: 10px;
+}
+
