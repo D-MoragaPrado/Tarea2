@@ -16,3 +16,8 @@ div#caja{
     margin: 10px;
 }
 
+#mensaje {
+    display: none;
+    color:crimson;
+    margin: 10px;
+}

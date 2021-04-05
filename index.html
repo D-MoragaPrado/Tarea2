@@ -9,7 +9,8 @@
     
 </head>
 <body>
-    <form method="POST" id="formulario" aria-required="true">
+    <div id="mensaje"></div>
+    <form method="POST" id="formulario" action="#">
         <fieldset>
             <ul>
                 <li>
@@ -22,7 +23,7 @@
                 </li>     
                 <li>
                     <label for="rut">RUT   (sin puntos ni guión)</label>
-                    <input id="rut" type="text" placeholder="111111115" required/>
+                    <input id="rut" type="text" placeholder="11111111-5" required/>
                 </li>
                 <li>
                     <label for="email">Correo Electrónico</label>
@@ -30,18 +31,18 @@
                 </li>
                 <li>
                     <label for="telefono">Teléfono Móvil</label>
-                    <input id="telefono" type="number" placeholder="912345678" required> 
+                    <input id="telefono" type="number" minlength="9" maxlength="9" placeholder="912345678" required> 
                 </li>
                 <li>
                     
                     Selecciona 1 o más lenguajes de programación de su interés:<br>
                     <div id="caja">
-                        <input id="" type="checkbox" name="lenguajes" >Python<br>
-                        <input id="" type="checkbox" name="lenguajes" >Java<br>
-                        <input id="" type="checkbox" name="lenguajes" >TypeScript<br>
-                        <input id="" type="checkbox" name="lenguajes" >PHP<br>
-                        <input id="" type="checkbox" name="lenguajes" >C#<br>
-                        <input id="" type="checkbox" name="lenguajes" >C++<br>
+                        <input id="check" type="checkbox" name="lenguajes" value="Python">Python<br>
+                        <input id="check" type="checkbox" name="lenguajes" value="Java">Java<br>
+                        <input id="check" type="checkbox" name="lenguajes" value="TypeScript">TypeScript<br>
+                        <input id="check" type="checkbox" name="lenguajes" value="PHP">PHP<br>
+                        <input id="check" type="checkbox" name="lenguajes" value="C#">C#<br>
+                        <input id="check" type="checkbox" name="lenguajes" value="C++">C++<br>
                     </div>
                 </li>
                 <li>
@@ -70,5 +71,6 @@
             </ul>
         </fieldset>
     </form>
+    <script src="js/inicio.js" async defer></script>
 </body>
 </html>
