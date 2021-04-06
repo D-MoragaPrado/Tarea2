@@ -9,7 +9,10 @@
     
 </head>
 <body>
-    <div id="mensaje"></div>
+    <div id="mensaje">
+        <h2>Hemos recibido sus datos, pronto nos estaremos comunicando con usted</h2> 
+        <img src="image.jpg"  class="imgRedonda">
+    </div>
     <form method="POST" id="formulario" action="#">
         <fieldset>
             <ul>
@@ -23,11 +26,11 @@
                 </li>     
                 <li>
                     <label for="rut">RUT   (sin puntos ni guión)</label>
-                    <input id="rut" type="text" placeholder="11111111-5" required/>
+                    <input id="rut" type="text" placeholder="11111111-5" pattern="[1-9][0-9]{6,7}[-][0-9kK]" required/>
                 </li>
                 <li>
                     <label for="email">Correo Electrónico</label>
-                    <input id="email" type="email" placeholder="cazadora@batman.com" required/>
+                    <input id="email" type="email" placeholder="helena.wayne@wayne.bat" required/>
                 </li>
                 <li>
                     <label for="telefono">Teléfono Móvil</label>
@@ -35,22 +38,22 @@
                 </li>
                 <li>
                     
-                    Selecciona 1 o más lenguajes de programación de su interés:<br>
+                    <h2></h2>Selecciona 1 o más lenguajes de programación de su interés:</h2>
                     <div id="caja">
                         <input id="check" type="checkbox" name="lenguajes" value="Python">Python<br>
                         <input id="check" type="checkbox" name="lenguajes" value="Java">Java<br>
                         <input id="check" type="checkbox" name="lenguajes" value="TypeScript">TypeScript<br>
                         <input id="check" type="checkbox" name="lenguajes" value="PHP">PHP<br>
                         <input id="check" type="checkbox" name="lenguajes" value="C#">C#<br>
-                        <input id="check" type="checkbox" name="lenguajes" value="C++">C++<br>
+                        <input id="check" type="checkbox" name="lenguajes" value="C++" checked>C++<br>
                     </div>
                 </li>
                 <li>
-                    ¿Cuál es su nivel de conocimiento en programación?<br>
+                    <h2>¿Cuál es su nivel de conocimiento en programación?</h2>
                     <input id="rango" type="range" required>
                 </li>
                 <li>
-                    ¿Cuantos años de experiencia laboral tiene?<br>
+                    <h2>¿Cuantos años de experiencia laboral tiene?</h2>
                     <input id="1." type="radio" name="experiencia" required>1.
                     <input id="2" type="radio" name="experiencia">2.
                     <input id="3" type="radio" name="experiencia">3.
@@ -60,14 +63,9 @@
                 <li>
                     Una descripcion breve acerca de usted:<br>
                     <textarea id="descripcion" rows="5" cols="50" maxlength="300"required></textarea>
-                </li>
-                <li class="button">
-                    <button type="reset">Limpiar Datos</button>
-                </li>
-                <li class="button">
-                    <button type="submit">Enviar Datos</button>
-                </li>
-                
+                </li>               
+                <button class="button" onclick="limpiarDatos()">Limpiar Datos</button>                              
+                <button class="button" type="submit">Enviar Datos</button>             
             </ul>
         </fieldset>
     </form>

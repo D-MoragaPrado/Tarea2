@@ -1,6 +1,7 @@
 li{
     list-style: none;
 }
+
 label{
     width: 120px;
     margin: 10px 10px 10px 0px;
@@ -8,16 +9,50 @@ label{
     display: inline-block;
 }
 
+fieldset{
+    background-color: darkmagenta;
+    font: oblique 100% cursive;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    font: oblique 100% cursive;
+}
+
+input,textarea{
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px black;
+}
+
 div#caja{
-    margin-left: 50px;
+    text-align: left;
+    margin-left: 40%;
 }
 
 .button{
     margin: 10px;
+    background-color:black;
+    color: rgb(219, 219, 219);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgb(157, 208, 214);
+    font-family: cursive;
 }
 
+.imgRedonda{
+    width:200px;
+    height:200px;
+    border-radius:150px;
+    box-shadow: 2px 2px 2px 1px black;
+}
 #mensaje {
     display: none;
     color:crimson;
-    margin: 10px;
+    text-align: center;
+    font: bold 30px cursive;
+    background-color: rgb(216, 156, 216);
+    border: darkmagenta 4px ridge;
 }
+
+
