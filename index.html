@@ -39,13 +39,14 @@
                 <li>
                     
                     <h2></h2>Selecciona 1 o más lenguajes de programación de su interés:</h2>
+                    <div id="advertencia">Debe marcar al menos 1</div>
                     <div id="caja">
-                        <input id="check" type="checkbox" name="lenguajes" value="Python">Python<br>
-                        <input id="check" type="checkbox" name="lenguajes" value="Java">Java<br>
-                        <input id="check" type="checkbox" name="lenguajes" value="TypeScript">TypeScript<br>
-                        <input id="check" type="checkbox" name="lenguajes" value="PHP">PHP<br>
-                        <input id="check" type="checkbox" name="lenguajes" value="C#">C#<br>
-                        <input id="check" type="checkbox" name="lenguajes" value="C++" checked>C++<br>
+                        <input id="check1" type="checkbox" name="lenguajes" value="Python">Python<br>
+                        <input id="check2" type="checkbox" name="lenguajes" value="Java">Java<br>
+                        <input id="check3" type="checkbox" name="lenguajes" value="TypeScript">TypeScript<br>
+                        <input id="check4" type="checkbox" name="lenguajes" value="PHP">PHP<br>
+                        <input id="check5" type="checkbox" name="lenguajes" value="C#">C#<br>
+                        <input id="check6" type="checkbox" name="lenguajes" value="C++">C++<br>
                     </div>
                 </li>
                 <li>
@@ -61,8 +62,8 @@
                     <input id="5+" type="radio" name="experiencia">5 o más.
                 </li>
                 <li>
-                    Una descripcion breve acerca de usted:<br>
-                    <textarea id="descripcion" rows="5" cols="50" maxlength="300"required></textarea>
+                    <h2>Una descripcion breve acerca de usted:</h2>
+                    <textarea id="descripcion" rows="5" cols="50" maxlength="300"required onclick="revisarCheckBox()"></textarea>
                 </li>               
                 <button class="button" onclick="limpiarDatos()">Limpiar Datos</button>                              
                 <button class="button" type="submit">Enviar Datos</button>             

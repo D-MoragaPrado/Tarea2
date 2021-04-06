@@ -54,5 +54,8 @@ div#caja{
     background-color: rgb(216, 156, 216);
     border: darkmagenta 4px ridge;
 }
-
+#advertencia{
+    display:none;
+    color: red;
+}
 
