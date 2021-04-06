@@ -26,7 +26,6 @@ formulario.addEventListener("submit",function(evento:any){
     if(revisarCheckBox()){
         formulario.style.display="none";
         mensaje.style.display="block";
-        revisarCheckBox();
         evento.preventDefault();
     }
 });
